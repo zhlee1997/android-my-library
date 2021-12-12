@@ -21,7 +21,7 @@ public class AlreadyReadBookActivity extends AppCompatActivity {
         alreadyReadBookRecView.setAdapter(adapter);
         alreadyReadBookRecView.setLayoutManager(new LinearLayoutManager(AlreadyReadBookActivity.this));
 
-        adapter.setBooks(Utils.getAlreadyReadBooks());
+        adapter.setBooks(Utils.getInstance(this).getAlreadyReadBooks());
 
     }
 

@@ -21,7 +21,7 @@ public class CurrentlyReadingBookActivity extends AppCompatActivity {
         currentlyReadingBookRecView.setAdapter(adapter);
         currentlyReadingBookRecView.setLayoutManager(new LinearLayoutManager(CurrentlyReadingBookActivity.this));
 
-        adapter.setBooks(Utils.getCurrentlyReadingBooks());
+        adapter.setBooks(Utils.getInstance(this).getCurrentlyReadingBooks());
     }
 
     @Override

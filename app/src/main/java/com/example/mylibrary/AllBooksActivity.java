@@ -30,7 +30,7 @@ public class AllBooksActivity extends AppCompatActivity {
         booksRecycleView.setAdapter(adapter);
         booksRecycleView.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter.setBooks(Utils.getInstance().getAllBooks());
+        adapter.setBooks(Utils.getInstance(this).getAllBooks());
     }
 
     // Press Up Button
